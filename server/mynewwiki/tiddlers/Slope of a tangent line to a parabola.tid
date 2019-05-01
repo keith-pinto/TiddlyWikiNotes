@@ -1,0 +1,58 @@
+created: 20190429002707306
+modified: 20190429010845114
+tags: 
+title: Slope of a tangent line to a parabola
+type: text/vnd.tiddlywiki
+
+[img[parabola Image #1]]
+
+Slope of the secant line PQ
+
+''//#1//''
+$$
+m_{sec} = slope of PQ = \frac{y_{1}-y_{0}}{x_{1}-x_{0}}
+$$
+
+Now for the crucial step:
+
+We let $$\bold{x_{1}}$$ approach $$\bold{x_{0}}$$, so that the variable point ''Q'' ap­proaches the fixed point ''P'' by sliding along the curve-much like a bead sliding along a curved wire. As this happens, the secant changes direction and visibly approaches the tangent at P as its limiting position.
+
+''//#2//''
+$$
+m = \lim_{Q\to P} m_{sec} = \lim_{x_{1}\to x_{0}} \frac{y_{1}-y_{0}}{x_{1}-x_{0}}
+$$
+
+We cannot calculate the limiting value m in above mentioned equation by simply setting $$\bold{x_{1}}$$ = $$\bold{x_{0}}$$, be­cause then $$\bold{y_{1}}$$ = $$\bold{y_{0}}$$ and this would give the meaningless result
+
+$$
+m = \frac{y_{0}-y_{0}}{x_{0}-x_{0}} = \frac{0}{0}
+$$
+
+We must think of $$\bold{x_{1}}$$ as coming very close to $$\bold{x_{0}}$$ //but remaining distinct from it//. Since ''P'' and ''Q'' both lie on the parabola (whose equation is $$y = x^{2}$$), we have the following:
+
+$$
+y_{0} = x_{0}^{2}
+\\[3mm]
+y_{1} = x_{1}^{2}
+$$
+
+Now ''#1'' can be written as
+
+''//#3//''
+$$
+m_{sec} = 
+\frac{y_{1}-y_{0}}{x_{1}-x_{0}} = 
+\frac{x_{1}^{2}-x_{0}^{2}}{x_{1}-x_{0}} =
+\frac{(x_{1}-x_{0})(x_{1}+x_{0})}{x_{1}-x_{0}} =
+x_{1}+x_{0}
+$$
+
+It is now very easy to see what is happening: As $$\bold{x_{1}}$$ gets closer and closer to $$\bold{x_{0}}$$, $$\bold{x_{1}+x_{0}}$$ becomes more and more nearly equal to $$\bold{x_{0}+x_{0} = 2x_{0}}$$. Hence the slope of the tangent to the curve $$y = x^{2}$$ at the point $$(x_{0}, y_{0})$$ is $$\bold{2x_{0}}$$
+
+NOTE: This is also one of the derivations of the derivate of $$x^{2}$$, i.e.
+
+''//#4//''
+$$
+f'(x^{2}) = 2x 
+$$
+
