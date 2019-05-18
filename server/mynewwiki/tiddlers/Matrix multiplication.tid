@@ -1,0 +1,16 @@
+created: 20190501225914307
+modified: 20190501233832472
+tags: [[linear algebra]]
+title: Matrix multiplication
+type: text/vnd.tiddlywiki
+
+The product of two matrices $$ \bold{A} \in \rm I\!R^{m \times n}$$ and $$ \bold{B} \in \rm I\!R^{n \times p}$$ is the matrix
+$$
+\bold{C} = AB \in \rm I\!R^{m \times p},
+$$
+where
+$$
+\bold{C_{ij}} = \sum_{k=1}^n A_{ik} \times B_{kj}
+$$
+
+Note that in order for the matrix product to exist, the number of columns in A must equal the number of rows in B.

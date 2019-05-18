@@ -1,0 +1,11 @@
+created: 20190501233802451
+modified: 20190501234649515
+tags: [[linear algebra]]
+title: Basic properties of matrix multiplication
+type: text/vnd.tiddlywiki
+
+Matrix multiplication is:
+
+# Associative: ''(AB)C = A(BC)''
+# Distributive: ''A(B + C) = AB + AC''
+# In general not commutative; that is, it can be the case that $$\bold{ AB  =\not BA }$$
