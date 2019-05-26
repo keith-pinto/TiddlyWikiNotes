@@ -1,0 +1,115 @@
+created: 20190519121931778
+modified: 20190522013224263
+tags: TDP EdGE
+title: Getting started!
+type: text/vnd.tiddlywiki
+
+!Questions
+#How platforms emerged?
+#What is the epicentre of the platform?
+#Format to author specifications?
+##[[Authoring Product Specifications]]
+#Basic assumptions?
+#How to represent a technical and functional view of the platform?
+<hr/>
+
+!Why Platform?
+The design of platform-based product family has been recognized as an efficient and effective means to realize sufficient product variety to satisfy a range of customer demands in support for mass customization //(Tseng and Jiao 1998)//.
+
+An effective platform for a product family can allow a variety of derivative products to be created more rapidly and easily (cost and time savings), with each product providing the features and functions desired by a particular market segment (Simpson 1998, Simpson et al. 2001).
+
+Steps for creating a module-based product family can be outlined as follows: 
+
+#Decompose products into their representative functions
+#Develop modules with one-to-one (or many-to-one) correspondence with functions
+#Group common functional modules into a common product platform
+#Standardize interfaces to facilitate addition, removal and substitution of modules. 
+<hr/>
+
+!Definitions
+!!The hierarchy
+#Product variants
+#Product family
+#Modules (Functional / Physical level)
+#Components
+#Knowledge base & repository
+
+!!Product Family
+Product Family is a group of related products that share common features, components, and subsystems, and satisfy a variety of market niches.
+
+Product families group similar product based on
+
+#Functional requirements
+#Product topology
+#Manufacturing & assembly similarity
+
+Most important characteristics in designing product families are
+
+#Modularity
+#Commonality & reusability
+#Standardisation
+
+A product family may have its origin in a differentiation process of a base product or in an aggregation process of distinct products.
+
+!!Product family architecture
+A product family architecture represents the conceptual structure and logical organization of product families from viewpoints of both customers and designers.
+
+!!4 slots of a Module
+
+#Attributes
+#Relation
+#Method
+#Rule
+
+!!Metrics
+
+#Product Variant
+##Cost
+##Time
+##Assemblability
+##Manufacturability
+#Platform & Product family
+##R&D Performance
+##Cycle time efficiency
+##Technological competitive responsiveness
+##Profit potential
+##Market efficiency
+##Investment efficiency
+
+''Market efficiency $$(\eta_{M})$$'' embodies a tradeoff between the marketing and the engineering design to provide the least amount of variety so as to satisfy the greatest amount of customers, i.e., target the largest number of market niches with the fewest products.
+
+$$
+\eta_{M} = \frac{N_{tm}}{N_{M}}
+$$
+
+$$N_{tm}$$ - number of the targetable market niches<br/>
+$$N_{M}$$ - total market number
+
+''Investment efficiency $$(\eta_{I})$$'' embodies a tradeoff between the manufacturing and the engineering design to invest a minimal amount of capital into machining and tooling equipment while still being able to produce as large a variety of products as possible.
+
+$$
+\eta_{I} = \frac{C_{m}}{N_{V}}
+$$
+
+$$C_{m}$$ - manufacturing equipment costs<br/>
+$$N_{V}$$ - number of the product varieties
+
+!Components
+
+!!Knowledge base & repository
+#Functions, means, structures
+#Features library
+#Modules library
+#Types, attributes, relationships, constraints
+#Evaluation & selection criteria
+
+!!Product design knowledge
+#Product knowledge
+#Process knowledge
+
+!!Process
+#Customer requirement modelling
+#Product architecture modelling
+#Product platform establishment
+#Product family generation
+#Product assessment

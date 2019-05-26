@@ -1,0 +1,24 @@
+created: 20190519131752821
+modified: 20190520103526936
+tags: product
+title: Authoring Product Specifications
+type: text/vnd.tiddlywiki
+
+!Why?
+
+//To ship the right product with higher quality, speed, and predictability.//
+
+!Structure of Specifications
+#The Problem
+#Measurable Goals
+##What should be measured*
+#Goals
+#Detailed Solution
+##Define constraints*
+#Timeline
+#What does success look like*
+
+!References
+https://goberoi.com/on-writing-product-specs-5ca697b992fd
+https://www.prodpad.com/blog/how-to-write-great-product-specs/
+https://hackernoon.com/how-you-write-product-specs-is-how-you-build-products-8072e52dabed
