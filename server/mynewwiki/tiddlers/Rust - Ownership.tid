@@ -1,0 +1,31 @@
+created: 20190702130357400
+modified: 20190702134329256
+tags: draft rust software-programming
+title: Rust - Ownership
+type: text/vnd.tiddlywiki
+
+! Ownership Rules
+First, let’s take a look at the ownership rules. Keep these rules in mind as we work through the examples that illustrate them:
+
+* Each value in Rust has a variable that’s called its ''owner''.
+* There can only be one owner at a time.
+* When the owner goes out of scope, the value will be dropped.
+
+
+Taking ownership and then returning ownership with every function is a bit tedious. What if we want to let a function use a value but not take ownership? It’s quite annoying that anything we pass in also needs to be passed back if we want to use it again, in addition to any data resulting from the body of the function that we might want to return as well.
+
+```javascript
+fn main() {
+    let s1 = String::from("hello");
+    let (s2, len) = calculate_length(s1);
+    println!("The length of '{}' is {}.", s2, len);
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); // len() returns the length of a String
+    (s, length)
+}
+```
+Listing 4-5: Returning ownership of parameters
+
+But this is too much ceremony and a lot of work for a concept that should be common. Luckily for us, Rust has a feature for this concept, called references.

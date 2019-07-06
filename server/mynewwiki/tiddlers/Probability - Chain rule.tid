@@ -1,0 +1,19 @@
+created: 20190706015857785
+modified: 20190706020627895
+tags: statistics probability
+title: Probability - Chain rule
+type: text/vnd.tiddlywiki
+
+NOTE: Sequence of things can either be represented as $$X_{1}...X_{n}$$ or $$X_{1}^{n}$$.
+
+Therefore joint probability for a sequence of things can be decomposed via chain rule as follows:
+
+$$
+P(X_{1}...X_{n}) = P(X_{1})P(X_{2}|X_{1})P(X_{3}|X_{1}^{2})P(X_{n}|X_{1}^{n-1})
+$$
+
+which can be re-written as
+
+$$
+P(X_{1}...X_{n}) = \sum_{k=1}^{n} P(X_{k}|X_{1}^{k-1})
+$$

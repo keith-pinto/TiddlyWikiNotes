@@ -1,0 +1,11 @@
+created: 20190527001230139
+modified: 20190527001541779
+tags: statistics
+title: Measure of center
+type: text/vnd.tiddlywiki
+
+''Mean:'' The "average" number; found by adding all data points and dividing by the number of data points.
+
+''Median:'' The middle number; found by ordering all data points and picking out the one in the middle (or if there are two middle numbers, taking the mean of those two numbers). 
+
+''Mode:'' The most frequent number—that is, the number that occurs the highest number of times.

@@ -1,0 +1,69 @@
+created: 20190704012613675
+modified: 20190705020437696
+tags: neural-networks
+title: Sigmoid neurons
+type: text/vnd.tiddlywiki
+
+<div style="text-align:center">[img[sigmoid neurons image #1]]</div>
+
+We would like a small change in weight to cause only a small corresponding change in the output from the network. As we'll see in a moment, this property will //''make learning possible''//.
+
+The problem is that this isn't what happens when our network contains [[perceptrons|Perceptrons]].
+
+//In fact, a small change in the weights or bias of any single perceptron in the network can sometimes cause the output of that perceptron to completely flip, say from 0 to 1.//
+
+That flip may then cause the behaviour of the rest of the network to completely change in some very complicated way. Perhaps there's some clever way of getting around this problem. ''But it's not immediately obvious how we can get a network of perceptrons to learn''.
+
+We can overcome this problem by introducing a new type of artificial neuron called a ''sigmoid neuron''.
+
+<div style="text-align:center">[img[perceptron image #1]]</div>
+
+Just like a perceptron, the sigmoid neuron has inputs, x,,1,,, x,,2,,,…. But instead of being just 0 or 1, these ''inputs can also take on any values between 0 and 1''.
+
+Also just like a perceptron, the sigmoid neuron has weights for each input, w,,1,,,w,,2,,,…, and an overall bias, b. But the output is not 0 or 1. Instead, it's:
+
+$$
+\sigma(w⋅x+b)
+$$
+
+where $$\sigma$$ is called the ''sigmoid function'', and is defined by
+
+$$
+\sigma(z) = \frac{1}{1+e^{-z}}
+$$
+
+where $$z$$ means the following
+
+$$
+z = \sum_{j} w_{j}x_{j} + b 
+$$
+
+<div style="text-align:center">or</div>
+
+$$
+z = w.x + b 
+$$
+
+<div style="text-align:center">If we compose all the above equations we get:</div>
+
+$$
+\sigma(z) = \frac{1}{ 1+e^{ -\sum_{j}w_{j}x_{j} -b} }
+$$
+
+<<<
+Incidentally, $$\sigma$$ is sometimes called the ''logistic function'', and this new class of neurons called ''logistic neurons''.
+<<<
+
+<div style="margin:auto; width:300px; height:220px">[img[sigmoid function image #1]]</div>
+
+$$
+\sigma(z) = \frac{1}{1+e^{-z}}
+$$
+
+To understand the similarity to the perceptron model, suppose $$z\equiv w⋅x+b$$ is a large positive number. Then $$e^{−z} \approx 0$$ and so $$\sigma(z) \approx 1$$. In other words, when $$z=w⋅x+b$$ is ''large and positive'', the output from the ''sigmoid neuron is approximately 1'', just as it would have been for a perceptron. 
+
+Suppose on the other hand that $$z=w⋅x+b$$ is very negative. Then $$e^{−z} \rightarrow \infty$$, and $$\sigma(z) \approx 0$$. So when $$z=w⋅x+b$$ is ''very negative'', the behaviour of a ''sigmoid neuron is approximately 0'', closely approximates behaviour of a perceptron.
+
+//It's only when $$w⋅x+b$$ is of modest size that there's much deviation from the perceptron model.//
+
+The smoothness of $$\sigma$$ means that small changes $$\Delta w_{j}$$ in the weights and$$\Delta b$$ in the bias will produce a small change $$\Delta output$$ in the output from the neuron.

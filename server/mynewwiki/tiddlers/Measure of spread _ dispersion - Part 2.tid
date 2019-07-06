@@ -1,0 +1,19 @@
+created: 20190527004942898
+modified: 20190527010124762
+tags: 
+title: Measure of spread / dispersion - Part 2
+type: text/vnd.tiddlywiki
+
+''Variance:'' The variance for a set of values, is the mean of the squared deviations from each of the values.
+
+Lets assume series of a values such as X,,1,,, X,,2,,, X,,3,,, ..., X,,N,, having the mean $$\mu$$. Then variance can be computed via the following equation.
+
+$$
+\sigma^2 = \frac{\sum_{k=1}^N (X_{k}-\mu)^2}{N}
+$$
+
+''Standard deviation:'' The square root of the variance.
+
+$$
+\sigma = \sqrt{variance} = \sqrt{\sigma^2}
+$$

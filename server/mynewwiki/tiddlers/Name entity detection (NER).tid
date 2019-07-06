@@ -1,0 +1,12 @@
+created: 20190626225102850
+modified: 20190626225238921
+tags: nlp
+title: Name entity detection (NER)
+type: text/vnd.tiddlywiki
+
+
+<<<
+Tokenization is intimately tied up with named entity detection, the task of detecting names, dates, and organisations.
+<<<
+
+One commonly used tokenization standard is known as the ''Penn Treebank tokenization'' standard

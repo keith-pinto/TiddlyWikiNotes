@@ -1,0 +1,16 @@
+created: 20190704003406789
+modified: 20190704003549472
+tags: pre-calculus
+title: Intervals?
+type: text/vnd.tiddlywiki
+
+! Intervals
+
+Suppose that a and b are numbers, with a < b. The `closed interval` from a to b, denoted by `[a, b]`-using brackets-includes its endpoints, and therefore consists of all real numbers x such that `a <= x <= b`.
+
+
+Parentheses are used to indicate excluded endpoints. The interval `(a, b)`, with both endpoints excluded, is called the `open interval` from a to b; it consists of all x such that `a < x < b`.
+
+Sometimes we wish to include only one endpoint in an interval. Thus, the intervals denoted by [a, b) and (a, b] are defined by the inequalities a <= x < b and a < x <= b, respectively.
+
+In each of these cases, any number c such that `a < c < b` is called an `interior point` of the interval

@@ -1,0 +1,55 @@
+created: 20190626215012858
+modified: 20190626221210176
+tags: nlp
+title: Herdan's or Heaps' Law
+type: text/vnd.tiddlywiki
+
+! Precursor
+''Types'' are the number of distinct words in a corpus; if the set of words in the vocabulary is ''V'' , the number of types is the vocabulary size ''|V|''.''Tokens'' are the total number ''//N//'' of running words. If we ignore punctuation, the following Brown sentence has //16 tokens and 14 types//:
+
+<<<
+They picnicked by the pool, then lay back on the grass and looked at the stars.
+<<<
+
+! Herdan's / Heaps' Law
+
+The relationship between the number of types ''|v|'' and number of tokens ''//N//'' is called ''Herdan's Law'' (Herdan, 1960) or ''Heaps' Law'' (Heaps, 1978). Where $$ k \space and \space \beta $$ are positive constants, and $$ 0 < \beta < 1 $$.
+
+$$
+|V| = kN^{\beta} 
+$$
+
+The value of $$ \beta $$ depends on the corpus size and the genre, but at least for the ''large corpora'' (examples mentioned below), ''$$ \bm{ \beta } $$ ranges from .67 to .75''. Roughly then we can say that the vocabulary size for a text goes up significantly faster than the square root of its length in words.
+
+<table>
+  <thead>
+    <th>Corpus</th>
+    <th>Tokens = //N//</th>
+    <th>Types = |V|</th>
+  </thead>
+  <tr>
+    <td>Shakespeare</td>
+    <td>884 thousand</td>
+    <td>31 thousand</td>
+  </tr>
+  <tr>
+    <td>Brown Corpus</td>
+    <td>1 million</td>
+    <td>38 thousand</td>
+  </tr>
+  <tr>
+    <td>Switchboard telephone conversations</td>
+    <td>2.4 million</td>
+    <td>20 thousand</td>
+  </tr>
+  <tr>
+    <td>COCA</td>
+    <td>440 million</td>
+    <td>2 million</td>
+  </tr>
+  <tr>
+    <td>Google N-grams</td>
+    <td>1 trillion</td>
+    <td>13 million</td>
+  </tr>
+</table>

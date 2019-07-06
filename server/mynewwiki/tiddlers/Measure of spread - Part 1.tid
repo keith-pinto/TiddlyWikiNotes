@@ -1,0 +1,12 @@
+created: 20190527002235271
+modified: 20190527004939144
+tags: statistics
+title: Measure of spread - Part 1
+type: text/vnd.tiddlywiki
+
+''Range:'' The difference between the largest and smallest value.
+
+''Interquartile Range (IQR):'' $$Q_{3}-Q_{1}$$. The IQR approximates the spread in the middle half the data.
+
+* Q,,1,, is the median of the data below the median
+* Q,,3,, is the median of the data above the median

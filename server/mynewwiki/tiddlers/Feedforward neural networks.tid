@@ -1,0 +1,11 @@
+created: 20190705021718622
+modified: 20190705022306471
+tags: neural-networks
+title: Feedforward neural networks
+type: text/vnd.tiddlywiki
+
+<<<
+Up to now, we've been discussing neural networks where the output from one layer is used as input to the next layer. Such networks are called feedforward neural networks. This means there are no loops in the network - information is always fed forward, never fed back. 
+<<<
+
+However, there are other models of artificial neural networks in which feedback loops are possible. These models are called [[recurrent neural networks|Recurrent neural networks]].

@@ -1,0 +1,21 @@
+created: 20190705012451769
+modified: 20190705013244104
+tags: draft statistics
+title: Probability mass function (pmf)
+type: text/vnd.tiddlywiki
+
+! What is  a Probability mass function?
+TODO...
+
+!!! ''Computing mean via PMF''
+
+$$
+\mu = \sum_{i} p_{i}x_{i}
+$$
+where the $$x_{i}$$ are the unique values in the PMF and $$p_{i}=PMF(x_{i})$$. 
+
+!!! ''Computing variance via PMF''
+
+$$
+\sigma = \sum_{i} p_{i}(x_{i}-\mu)^{2}
+$$

@@ -1,0 +1,27 @@
+created: 20190706020741465
+modified: 20190706022237818
+tags: nlp
+title: N-Grams - A langauge model
+type: text/vnd.tiddlywiki
+
+<<<
+Models that assign probabilities to sequences of words are called ''language models'' or ''LMs''.
+<<<
+
+One of the simplest model that assigns probabilities to sentences and sequences of words is the ''n-gram''.
+
+Let’s begin with the task of computing ''P(w|h)'', the probability of a word ''w'' given some history ''h''. Suppose the history h is `its water is so transparent that` and we want to know the probability that the next word is `the`: 
+
+$$
+P(\textrm{the|its water is so transparent that})
+$$
+
+One way to estimate this probability is: //(NOTE: C stands for count)//
+
+$$
+P(\textrm{the|its water is so transparent that}) = \frac{C(\textrm{its water is so transparent that the})}{C(\textrm{its water is so transparent that})}
+$$
+
+We can't just estimate by counting the number of time every word occurs following every long string, because language is creative and a particular context might have never occurred before!
+
+The ''intuition of the n-gram model'' is that instead of computing the probability of a word given its entire history, we can ''approximate'' the history by just the last few words.

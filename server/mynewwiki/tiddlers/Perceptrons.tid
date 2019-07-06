@@ -1,0 +1,49 @@
+created: 20190627001846334
+modified: 20190705020501417
+tags: neural-networks
+title: Perceptrons
+type: text/vnd.tiddlywiki
+
+! What is a neural network?
+
+To get started, I'll explain a type of artificial neuron called a ''perceptron''. Perceptrons were developed in the 1950s and 1960s by the scientist Frank Rosenblatt, inspired by earlier work by Warren Mc-Culloch and Walter Pitts. Today, it's more common to use other models of artificial neurons - example: the sigmoid neuron. We'll get to sigmoid neurons shortly. But to understand why sigmoid neurons are defined the way they are, it's worth taking the time to first understand perceptrons.^^''[1]''^^
+
+<div style="text-align:center">[img[perceptron image #1]]</div>
+
+In the example shown above the perceptron has three inputs, ''x1, x2 and x3''. In general it could have more or fewer inputs. Rosenblatt proposed a ''simple rule to compute the output''.
+
+He introduced ''weights'', ''w1, w2, …'', real numbers expressing the importance of the respective inputs to the output. The ''neuron's output, 0 or 1'', is ''determined'' by whether the ''weighted sum'' $$\sum_{j}{w_{j}x_{j}}$$ is less than or greater than some ''threshold value''. Just like the weights, the threshold is a real number which is a parameter of the neuron. To put it in more precise algebraic terms:
+
+$$
+output = \begin{cases}
+   0 &\text{if } \sum_{j}{w_{j}x_{j}} \leq threshold \\
+   1 &\text{if } \sum_{j}{w_{j}x_{j}} > threshold
+\end{cases}
+$$
+
+Let's simplify the way we describe perceptrons. The condition $$\bm{\sum_{j}{w_{j}x_{j}} > threshold}$$ is cumbersome, and we can make two notational changes to simplify it.
+
+The first change is to write $$\bm{\sum_{j}{w_{j}x_{j}}}$$ as a [[dot product]], $$\bm{w⋅x≡\sum_{j}{w_{j}x_{j}}}$$, where ''w and x are vectors'' whose components are the weights and inputs, respectively.
+
+The second change is to move the threshold to the other side of the inequality, and to replace it by what's known as the ''perceptron's bias'', ''b≡−threshold''. Using the bias instead of the threshold, the perceptron rule can be rewritten:
+
+$$
+output = \begin{cases}
+   0 &\text{if } w.x +b \leq 0 \\
+   1 &\text{if } w.x +b > 0 \\
+\end{cases}
+$$
+
+You can think of the ''bias as a measure of how easy it is to get the perceptron to output a 1''. Or to put it in //more biological terms, the bias is a measure of how easy it is to get the perceptron to fire//.
+
+The computational universality of perceptrons is simultaneously reassuring and disappointing. It's reassuring because it tells us that networks of perceptrons can be as powerful as any other computing device. But it's also disappointing, because it makes it //''seem as though perceptrons are merely a new type of NAND gate''//. That's hardly big news!
+
+However, the situation is better than this view suggests. It turns out that we can devise //''learning algorithms''// which can automatically tune the weights and biases of a network of artificial neurons. This tuning happens in response to external stimuli, without direct intervention by a programmer. These learning algorithms enable us to use artificial neurons in a way which is radically different to conventional logic gates. Instead of explicitly laying out a circuit of NAND and other gates, our neural networks can simply learn to solve problems, sometimes problems where it would be extremely difficult to directly design a conventional circuit.
+
+! Facts
+<<<
+Suppose we take all the weights and biases in a network of perceptrons, and multiply them by a positive constant, c>0. Tthe behaviour of the network doesn't change.
+<<<
+
+! References
+[1] http://neuralnetworksanddeeplearning.com/chap1.html

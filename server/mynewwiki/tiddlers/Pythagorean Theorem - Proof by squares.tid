@@ -1,0 +1,18 @@
+created: 20190623231610895
+modified: 20190704003202165
+tags: pre-calculus
+title: Pythagorean Theorem - Proof by squares
+type: text/vnd.tiddlywiki
+
+[img[Pythagorean theorem Image #1]]
+
+There are many proofs of this theorem, but the following is probably sim­pler than most.<br/>
+Let the legs be a and b and the hypotenuse c, and arrange four replicas of the triangle in the corners of a square of side a + b, as shown above.<br/>
+
+Then the area of the large square equals 4 times the area of the triangle plus the area of the small square; that is
+
+$$
+(a+b)^{2} = 4(\frac{1}{2}ab) + c^{2}
+$$
+
+This simplifies at once to $$a^{2} + b^{2} = c^{2}$$, which is the ''Pythagorean theorem''.

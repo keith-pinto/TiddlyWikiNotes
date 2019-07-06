@@ -1,0 +1,13 @@
+created: 20190705022102550
+modified: 20190705022248157
+tags: neural-networks
+title: Recurrent neural networks
+type: text/vnd.tiddlywiki
+
+The idea in these models is to have neurons which fire for some limited duration of time, before becoming //quiescent//.
+
+That firing can stimulate other neurons, which may fire a little while later, also for a limited duration. That causes still more neurons to fire, and so over time we get a cascade of neurons firing. ''Loops don't cause problems in such a model, since a neuron's output only affects its input at some later time, not instantaneously.''
+
+''Recurrent neural nets have been less influential than feedforward networks'', in part because the learning algorithms for recurrent nets are (at least to date) less powerful.
+
+But recurrent networks are still extremely interesting. ''They're much closer in spirit to how our brains work than feedforward networks''. And it's possible that recurrent networks can solve important problems which can only be solved with great difficulty by feedforward networks.

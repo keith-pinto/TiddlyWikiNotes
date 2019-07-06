@@ -1,0 +1,23 @@
+created: 20190704000051493
+modified: 20190704003117307
+tags: pre-calculus
+title: The Midpoint formulas
+type: text/vnd.tiddlywiki
+
+[img[Midpoint formula image #1]]
+
+If the given points are $$ P_{1} = (x_{1}, y_{1}) $$ and $$ P_{2} = (x_{1}, y_{1}) $$ and if $$P = (x,y)$$ is the midpoint then:
+
+$$
+x = x_{1} + \frac{1}{2}(x_{2}-x_{1})
+$$
+$$
+y = y_{1} + \frac{1}{2}(y_{2}-y_{1})
+$$
+Therefore:
+$$
+x = \frac{1}{2}(x_{1}+x_{2})
+$$
+$$
+y = \frac{1}{2}(y_{1}+y_{2})
+$$

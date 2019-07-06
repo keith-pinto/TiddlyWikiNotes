@@ -1,0 +1,16 @@
+created: 20190623232648460
+modified: 20190704003145135
+tags: pre-calculus
+title: Distance Formula
+type: text/vnd.tiddlywiki
+
+[img[Distance formula Image #1]]
+
+If the points are P,,1,, = (x,,1,,, y,,1,,) and P,,2,, = (x,,2,,, y,,2,,), then the segment joining them is the hypotenuse of a right triangle (Figure above) with legs lx,,1,, - x,,2,,I and |y,,1,, - y,,2,,l. By the Pythagorean theorem,
+$$
+d^{2} = |x_{1}-x_{2}|^2 + |y_{1}-y_{2}|^2
+$$
+Therefore the distance formula is
+$$
+d = \sqrt{(x_{1}-x_{2})^2+(y_{1}-y_{2})^2}
+$$

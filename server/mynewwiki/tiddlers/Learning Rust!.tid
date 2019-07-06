@@ -1,0 +1,86 @@
+created: 20190615162241824
+modified: 20190702133832812
+tags: software-programming rust
+title: Learning Rust!
+type: text/vnd.tiddlywiki
+
+! Quotes
+<<<
+Rust programming language is fundamentally about empowerment,,[1],,
+<<<
+<<<
+Rust isn’t limited to low-level systems programming. It’s expressive and ergonomic enough to make ''CLI apps'', ''web servers'', and many other kinds of code quite pleasant to write — you’ll find simple examples of both later in the book. Working with Rust allows you to build skills that transfer from one domain to another; you can learn Rust by writing a web app, then apply those same skills to target your Raspberry Pi.,,[1],,
+<<<
+<<<
+''How do companies use Rust?''
+
+Hundreds of companies, large and small, use Rust in production for a variety of tasks. Those tasks include command line tools, web services, DevOps tooling, embedded devices, audio and video analysis and transcoding, cryptocurrencies, bioinformatics, search engines, Internet of Things applications, machine learning, and even major parts of the Firefox web browser.
+<<<
+
+<<<
+Rust’s central feature is ''//ownership//''. Although the feature is straightforward to explain, it has deep implications for the rest of the language.
+<<<
+
+! Key Points
+
+<<<
+The `main` function is special: it is always the first code that runs in every executable Rust program.,,[3],,
+<<<
+<<<
+Rust style is to `indent` with four spaces, not a tab.,,[3],,
+<<<
+<<<
+''println!'' calls a `Rust macro`. If it called a function instead, it would be entered as println (without the !).,,[3],,
+<<<
+<<<
+In Rust, packages of code are referred to as `crates`.,,[4],,
+<<<
+<<<
+In Rust, variables are `immutable` by default.
+<<<
+<<<
+[[String|https://doc.rust-lang.org/std/string/struct.String.html]] is a string type provided by the standard library that is a //''growable''//, UTF-8 encoded bit of text.
+<<<
+<<<
+//''Example:'' let mut name = String::new()//<br/>
+The `::` syntax in the ''::new'' line indicates that new is an `associated function` of the ''String'' type. An associated function is implemented on a type, in this case String, rather than on a particular instance of a String. //Some languages call this a static method//.
+<<<
+<<<
+`References are immutable` by default. Hence, you need to write ''&mut guess'' rather than ''&guess'' to make it mutable.
+<<<
+<<<
+Another neat feature of Cargo is that you can run the `cargo doc --open` command, which will build documentation provided by all of your dependencies locally and open it in your browser.
+<<<
+<<<
+A `match expression` is made up of ''arms''. An arm consists of a ''pattern'' and the ''code'' that should be run if the value given to the beginning of the match expression fits that arm’s pattern.
+<<<
+<<<
+A few number types can have a value between 1 and 100: `i32`, a 32-bit number; `u32`, an unsigned 32-bit number; `i64`, a 64-bit number; as well as others. Rust defaults to an ''i32''.
+<<<
+<<<
+Rust allows us to `shadow` the previous value of guess with a new one. This feature is often ''used in situations in which you want to convert a value from one type to another type''. Shadowing lets us ''reuse'' the guess ''variable name'' rather than forcing us to create two unique variables, such as //guess_str// and //guess// for example. (Chapter 3 covers shadowing in more detail.)
+<<<
+<<<
+When your code calls a function, the values passed into the function (including, potentially, pointers to data on the heap) and the function’s local variables get pushed onto the stack. When the function is over, those values get popped off the stack.
+<<<
+<<<
+String literal - this is immutable<br/>
+`let s = "hello";`<br/>
+String data type<br/>
+`let s = String::from("hello");`
+<<<
+<<<
+When a variable goes out of scope, Rust calls a special function for us. This function is called `drop`, and it’s where the author of `String` can put the code to return the memory. Rust calls drop automatically at the closing curly bracket.
+<<<
+<<<
+Passing a variable to a function will move or copy, just as assignment does.
+<<
+
+! Notes
+# Chapters 2, 12, and 20 are project chapters; the rest are concept chapters.,,[2],,
+
+! References
+[1] https://doc.rust-lang.org/book/foreword.html<br/>
+[2] https://doc.rust-lang.org/book/ch00-00-introduction.html#how-to-use-this-book<br/>
+[3] https://doc.rust-lang.org/book/ch01-02-hello-world.html<br/>
+[4] https://doc.rust-lang.org/book/ch01-03-hello-cargo.html

@@ -1,0 +1,20 @@
+created: 20190627010750512
+modified: 20190704011126414
+tags: fact
+title: NAND Gates
+type: text/vnd.tiddlywiki
+
+<<<
+NAND gate is universal for computation, that is, we can build any computation up out of NAND gates^^[1]^^
+<<<
+
+<<<
+Following image represents a Perceptron that functions as a NAND gate
+<<<
+
+<div style="text-align:center">
+[img[perceptron image #2]]
+</div>
+
+! References
+http://neuralnetworksanddeeplearning.com/chap1.html
