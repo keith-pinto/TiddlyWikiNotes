@@ -1,6 +1,6 @@
 created: 20190706020741465
-modified: 20190706022237818
-tags: nlp
+modified: 20190708013531198
+tags: draft nlp
 title: N-Grams - A langauge model
 type: text/vnd.tiddlywiki
 
@@ -25,3 +25,7 @@ $$
 We can't just estimate by counting the number of time every word occurs following every long string, because language is creative and a particular context might have never occurred before!
 
 The ''intuition of the n-gram model'' is that instead of computing the probability of a word given its entire history, we can ''approximate'' the history by just the last few words.
+
+TODO
+
+1. Markov assumption

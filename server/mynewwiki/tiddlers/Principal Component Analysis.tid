@@ -1,9 +1,8 @@
 created: 20190615085326544
-modified: 20190615091856271
-tags: statistics
+modified: 20190706023818583
+tags: draft statistics
 title: Principal Component Analysis
 type: text/vnd.tiddlywiki
-
 
 <<<
 PCA is a method for compressing a lot of data into something that captures the essence of the original data.

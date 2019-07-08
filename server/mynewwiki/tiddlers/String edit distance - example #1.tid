@@ -1,0 +1,21 @@
+created: 20190708013147014
+modified: 20190708015415650
+tags: nlp
+title: String edit distance - example #1
+type: text/vnd.tiddlywiki
+
+<<<
+Compute the edit distance (using insertion cost 1, deletion cost 1, substitution cost 1) of “''leda''” to “''deal''”. Show your work (using the edit distance grid).
+<<<
+
+@@margin:auto;
+|Src\Tar|#|d|e|a|l|
+|#|0|1|2|3|4|
+|l|1|1|2|3|3|
+|e|2|2|1|2|3|
+|d|3|2|2|2|3|
+|a|4|3|3|2|@@font-weight:bold;color:red;3@@|
+@@
+
+!!! References
+http://www.let.rug.nl/~kleiweg/lev/
