@@ -1,0 +1,118 @@
+created: 20190709013556218
+modified: 20190709151539536
+tags: neural-networks calculus machine-learning
+title: Univariate gradient descent
+type: text/vnd.tiddlywiki
+
+! Intuition (and maths!) behind univariate gradient descent
+
+!! ''What is gradient descent?''
+An iterative algorithm to find a minimum of a target function.
+
+<<<
+It is often used in ''linear regression'' to find a //''line of best-fit for given data''//. By doing so, we gain better insights to the relationship between an input and an output of your data set, and more interestingly, we are able to predict an output given a new input with a certain confidence.
+
+Having said that, gradient descent is not specific to solving linear regression problems. It is a //''general algorithm that can be applied to any differentiable function to find its minimum''//.
+<<<
+
+Approach to learning gradient descent in this article:
+
+# What is linear regression
+# how to find the line of best-fit using cost function
+# why gradient descent is important in linear regression
+# how exactly gradient descent works
+
+!! ''Linear regression''
+
+Linear regression model allows you to predict a dependent variable y (output) when given an independent variable x (input), //''assuming that there is a linear relationship between the two variables''//.
+
+In more practical terms, the goal of linear regression is to find a line (called ''hypothesis'') that best represents (fits) data points.
+
+<<<
+But the real question is — how do we know how “good” the fit is?
+<<<
+
+!! ''Cost function''
+
+We measure the fitness of a ''hypothesis'' with a cost function.
+
+A cost function is a [[mean squared error (MSE)|Cost function]]  -  a collective measure of deviation between real values (labels) and estimated values (predictions) derived from the hypothesis. The smaller a cost function is, the less deviation between the line and data points, hence the better the hypothesis is.
+
+!! ''Univariate gradient descent''
+
+Gradient descent applied to a function with a single variable.
+
+Let’s define a univariate function $$J$$ of theta, $$J(\theta)$$, as follows:
+
+$$
+J(\theta) = \theta^{2}
+$$
+
+<div style="margin:auto; width:350px">[img[sample function - image #1]]</div>
+
+We want to find a value of $$\theta$$ that minimises $$J(\theta)$$:
+
+Before looking at the algorithm in detail, two critical questions here are:
+
+# How do we determine when $$J(\theta)$$ reaches its minimum?
+# If $$J(\theta)$$ is not at its minimum, how do we know what value of $$\theta$$ to try next?
+
+Those questions can be answered by taking a [[derivative|Derivative of a function]] of $$J(\theta)$$  -  in other words, figuring out the slope of a tangent line that touches the $$J(\theta)$$ at given $$\theta$$.
+
+If the slope is positive, it means the value of $$\theta$$ needs to decrease in the next iteration to move closer to the minimum, whereas $$\theta$$ needs to increase if the slope is negative.
+
+Consider the figure below. Since the slope of a tangent line at $$\theta = 6$$ is positive $$(12)$$, we know that $$\theta$$ needs to decrease to get closer to the value that minimises $$J(\theta) (\theta = 0)$$. On the other hand, the slope of a tangent line at $$\theta = -2$$ is negative $$(-4)$$, so we know that we need to increase the value of $$\theta$$ in the next iteration.
+
+<div style="margin:auto; width:350px">[img[slopes of a parabola - image #1]]</div>
+
+<<<
+''NOTE:'' Slope of a tangent line at $$\theta = 6$$ is $$12$$, because derivative of $$x^{2}$$ is $$2x$$ i.e. 
+$$
+f'(x^{2}) = 2x
+$$
+For a better understanding of derivates, click [[here|Derivative of a function]]. You can also check out the proof for the above statement over [[here|Slope of a tangent line to a parabola]].
+<<<
+
+And also importantly, the slope becomes $$0$$ when we reach the minimum of $$J(\theta)$$.'' This is how we know when gradient descent converges'' i.e. the value of $$J(\theta)$$ approaches sufficiently close to its minimum. In practice, we declare convergence if $$J(\theta)$$ decreases less than $$10^{-3} \equiv 0.001$$ in one iteration.
+
+!! ''Update rule''
+
+Now, we need a systemic and efficient way to update $$\theta$$, whilst we look for a value of $$\theta$$ that minimises $$J(\theta)$$.
+
+In gradient descent, it is done by automatically applying the update rule after each iteration, so that $$\theta$$ gets increasingly closer to the value we’re aiming for.
+
+The update rule for univariate function is:
+$$
+\theta := \theta - \alpha \frac{d}{d\theta}J(\theta) 
+$$
+
+Here, $$\alpha$$ is called the ''learning rate'' and $$\frac{d}{d\theta}J(\theta)$$ is the derivative of $$J(\theta)$$  -  i.e. the slope of a tangent line.
+
+The learning rate determines how fast or slow $$\theta$$ moves. Choosing a good learning rate is crucial, as if it is too large we might miss the optimum value by skipping over it and may not even converge. On the other hand, if it is too small, too many iterations will be required for the algorithm to converge. I’ll explain more on this a bit later, with some visual aids.
+
+Since derivate of $$x^{2}$$ is $$2x$$, the update rule can be simplified to:
+
+$$
+\theta := \theta - \alpha.2\theta := (1-2\alpha)\theta
+$$
+
+!! ''Gradient descent in action''
+Let’s finally look at gradient descent in action.
+
+We’re going to perform gradient descent for $$J(\theta) = \theta^{2}$$ with $$\alpha = 0.3$$ and a starting value of $$\theta = 6$$
+
+Following are some of the initial values of $$\theta$$:
+
+|Iteration no.|Value of $$\theta$$ after applying update rule|
+|$$1^{st}$$ iteration| $$(1 - 2*0.3)6 = 0.4*6 = 2.4$$|
+|$$2^{st}$$ iteration| $$(1 - 2*0.3)2.4 = 0.4*2.4 = 0.96$$|
+|$$3^{rd}$$ iteration| $$(1 - 2*0.3)0.96 = 0.4*2.4 = 0.384$$|
+
+<div style="margin:auto; width:600px">[img[gradient descent - image #1]]</div>
+
+//''Fig.3a''  -  Steps of gradient descent as it approaches minimum of $$J(\theta)$$. ''Fig.3b''  -  A plot of $$J(\theta)$$ against the number of iteration, useful to visually monitor convergence.//
+
+Finally, from the sixth to the seventh iteration, $$J(\theta)$$ decreases by $$0.0005$$, which is less than the threshold of $$10^{-3}$$, at which point we can declare a convergence.
+
+!! References
+https://towardsdatascience.com/machine-learning-bit-by-bit-univariate-gradient-descent-9155731a9e30

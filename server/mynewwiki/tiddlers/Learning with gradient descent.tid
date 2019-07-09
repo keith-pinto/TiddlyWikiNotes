@@ -1,0 +1,17 @@
+created: 20190708021813658
+modified: 20190708023442657
+tags: draft neural-networks
+title: Learning with gradient descent
+type: text/vnd.tiddlywiki
+
+! Gradient Descent
+
+<<<
+We want to find a set of weights and biases which make the [[cost|Cost function]] as small as possible. We'll do that using an algorithm known as ''gradient descent''.
+<<<
+
+TODO: elaborate on
+
+$$
+\Delta C \approx \nabla C . \Delta v
+$$

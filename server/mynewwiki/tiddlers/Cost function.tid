@@ -1,0 +1,26 @@
+created: 20190708021010697
+modified: 20190709014940048
+tags: neural-networks
+title: Cost function
+type: text/vnd.tiddlywiki
+
+<<<
+Also know as 
+
+* loss or object function
+* quadratic cost function
+* MSE - Mean squared error
+<<<
+
+$$
+C(w,b) \equiv \frac{1}{2n}\sum_{x} || y(x) - a ||^{2}
+$$
+
+where:
+
+* $$w$$ - collection of all weights in the network
+* $$b$$ - all the biases
+* $$n$$ -  total number of training inputs
+* $$x$$ - Training input
+* $$y(x)$$ - Desired output
+* $$a$$ - vector of output from the network when x is input.
