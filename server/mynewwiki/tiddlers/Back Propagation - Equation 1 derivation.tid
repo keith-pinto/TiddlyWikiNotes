@@ -1,0 +1,37 @@
+created: 20190723234824866
+modified: 20190723234907515
+tags: draft neural-networks
+title: Back Propagation - Equation 1 derivation
+type: text/vnd.tiddlywiki
+
+!! BP1
+
+''An equation for the error in the output layer'' $$(\delta^{L})$$
+
+$$
+\LARGE
+\delta_{j}^{L} = \frac{\partial C}{\partial a_{j}^{L}} \sigma^{\prime}(z_{j}^{L})
+$$
+<br/>
+$$
+\text{if } C = \frac{1}{2}\sum_{j} (y_{j} - a^{L}_{j})^{2} \text{ then: } 
+$$
+$$
+\frac{\partial C}{\partial a^{L}_{j}} =
+
+\frac{1}{2} \cdot
+(\frac{\partial C}{\partial a^{L}_{j}} y_j^2 -
+\frac{\partial C}{\partial a^L_j} (-2y_ja_j^L) +
+\frac{\partial C}{\partial a^{L}_{j}} (a_j^L)^2)
+$$
+$$
+=
+\frac{1}{2} \cdot
+(0 -
+2y_j +
+2a_j^L)
+$$
+$$
+=
+(a_j^L - y_j)
+$$

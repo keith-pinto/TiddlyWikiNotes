@@ -1,0 +1,41 @@
+created: 20190721014901518
+modified: 20190726021540824
+tags: machine-learning rough-notes
+title: CS 229
+type: text/vnd.tiddlywiki
+
+! Lecture 1
+
+# Arthur Samuel (1959) - Defining ML
+# Tom Mitchell (1998) - Defining ML (P - Performance, E - Experience, T - Task)
+# Regression can only work on values which are of type - Continuous
+# SVM - Good for solving classification problems 
+
+! Lecture 2
+
+# Alvin the first autonomous driven car was built in 1993 (i.e. 15 years ago if we were in 2008)
+# Understand what is trace of a matrix
+# Understand (in depth) alternative learning algorithm which doesn't use gradient descent.
+
+
+!! Notations
+
+# m - # of training examples
+# x - input variables / features
+# y - output / target variable
+# (x, y) - Training example
+# $$(x^i, y^i)$$ - $$i^{th}$$ training example
+
+! Lecture 3
+
+# Non parametric learning algorithms
+# Parametric learning algorithms - Fix no. of parameters that fit the data
+# No. of parameters grows linearly with the learning set
+# Locally weighted regression - Loess
+# Model selection
+# Andrew Moore's kd-tree - https://www.ri.cmu.edu/pub_files/pub1/moore_andrew_1991_1/moore_andrew_1991_1.pdf (Efficiency in executing Loess for large training data)
+# Checkout gaussian distribution
+# Central limit theorem
+# In a week or two we'll be learning generative & discriminative algorithms
+# IID - Independently identical distribution
+# Digression perceptron

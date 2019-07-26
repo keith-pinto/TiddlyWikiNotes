@@ -1,5 +1,5 @@
 created: 20190702130357400
-modified: 20190702134329256
+modified: 20190716233648971
 tags: draft rust software-programming
 title: Rust - Ownership
 type: text/vnd.tiddlywiki
@@ -29,3 +29,4 @@ fn calculate_length(s: String) -> (String, usize) {
 Listing 4-5: Returning ownership of parameters
 
 But this is too much ceremony and a lot of work for a concept that should be common. Luckily for us, Rust has a feature for this concept, called references.
+

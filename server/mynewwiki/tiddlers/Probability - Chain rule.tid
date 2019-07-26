@@ -1,10 +1,11 @@
 created: 20190706015857785
-modified: 20190706020627895
+modified: 20190713031218814
 tags: statistics probability
 title: Probability - Chain rule
 type: text/vnd.tiddlywiki
 
-NOTE: Sequence of things can either be represented as $$X_{1}...X_{n}$$ or $$X_{1}^{n}$$.
+NOTE: Sequence of things can either be represented as $$X_{1}...X_{n}$$ or $$X_{1}^{n}$$ (so the expression $$X_{1}^{n−1}$$ means the string 
+$$X_{1},X_{2},...,X_{n−1}$$).
 
 Therefore joint probability for a sequence of things can be decomposed via chain rule as follows:
 

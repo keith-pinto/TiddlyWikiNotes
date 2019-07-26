@@ -1,0 +1,46 @@
+created: 20190709171320430
+modified: 20190714010450004
+tags: draft machine-learning calculus
+title: Linear Regression - Derivation
+type: text/vnd.tiddlywiki
+
+$$
+Error_{(m,b)} = \frac{1}{N} \sum_{i=1}^{N} (y_{i} - (mx_{i} +b))^{2}
+$$
+
+$$
+\frac{\partial}{\partial m} = \frac{\partial}{\partial m} (y_{i} - (mx_{i} +b))^{2}
+$$
+
+$$
+= \frac{\partial}{\partial m} (y_{i}^{2} - 2(mx_{i} +b) + (mx_{i} +b)^{2})
+$$
+
+$$
+= \frac{\partial}{\partial m} (y_{i}^{2} - 2mx_{i} -2b + m^{2}x_{i}^{2} + 2mx_{i}b + b^{2})
+$$
+
+$$
+= \frac{\partial}{\partial m} (y_{i}^{2} - 2mx_{i} -2b + m^{2}x_{i}^{2} + 2mx_{i}b + b^{2})
+$$
+
+$$
+= \frac{\partial}{\partial m} y_{i}^{2} - 
+\frac{\partial}{\partial m} 2mx_{i} -
+\frac{\partial}{\partial m} 2b + 
+\frac{\partial}{\partial m} m^{2}x_{i}^{2} + 
+\frac{\partial}{\partial m} 2mx_{i}b + 
+\frac{\partial}{\partial m} b^{2}
+$$
+
+$$
+= 0 - 2x_{i} - 0 + 2mx_{i}^{2} + 2x_{i}b + 0
+$$
+
+$$
+= 2x_{i} + 2mx_{i}^{2} + 2x_{i}b
+$$
+
+$$
+= 2x_{i} (1 + mx_{i} + b)
+$$

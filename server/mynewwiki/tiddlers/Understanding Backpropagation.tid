@@ -1,0 +1,16 @@
+created: 20190716005851444
+modified: 20190716011450484
+tags: draft neural-networks
+title: Understanding Backpropagation
+type: text/vnd.tiddlywiki
+
+!! Naming conventions for weights
+$$
+w^{l}_{jk}
+$$
+Weights for connection between $$k^{th}$$ neuron in the $$(l-1)^{th}$$ layer and $$j^{th}$$ neuron in the $$l^{th}$$ layer.
+
+!!Activation function
+$$
+a^{\prime} = \sigma(wa + b)
+$$

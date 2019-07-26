@@ -1,0 +1,50 @@
+created: 20190720154446917
+modified: 20190723234922310
+tags: draft neural-networks
+title: Backpropogation equations
+type: text/vnd.tiddlywiki
+
+! 4 fundamental equations
+
+!! BP1
+
+''An equation for the error in the output layer'' $$(\delta^{L})$$
+
+$$
+\LARGE
+\delta_{j}^{L} = \frac{\partial C}{\partial a_{j}^{L}} \sigma^{\prime}(z_{j}^{L})
+$$
+
+''Matrix based form for the complete layer $$L$$''
+
+$$
+\LARGE
+\delta^L = (a^L -y) \odot \sigma^\prime(z^L)
+$$
+
+!! BP2
+
+''An equation for the error $$\delta^l$$ in terms of the error in the next layer, $$\delta^{l+1}$$''
+
+$$
+\LARGE
+\delta^l = ((w^{l+1})^T\delta^{l+1}) \odot \sigma^\prime(z^l)
+$$
+
+!! BP3
+
+''An equation for the rate of change of the cost with respect to any bias in the network''
+
+$$
+\LARGE
+\frac{\partial C}{\partial b_j^l} = \delta_j^l
+$$
+
+!! BP4
+
+''An equation for the rate of change of the cost with respect to any weight in the network''
+
+$$
+\LARGE
+\frac{\partial C}{\partial w_{jk}^l} = a_k^{l-1} \delta^l_j
+$$

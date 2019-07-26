@@ -1,5 +1,5 @@
 created: 20190709013556218
-modified: 20190709151539536
+modified: 20190709164723845
 tags: neural-networks calculus machine-learning
 title: Univariate gradient descent
 type: text/vnd.tiddlywiki
@@ -116,3 +116,4 @@ Finally, from the sixth to the seventh iteration, $$J(\theta)$$ decreases by $$0
 
 !! References
 https://towardsdatascience.com/machine-learning-bit-by-bit-univariate-gradient-descent-9155731a9e30
+http://mccormickml.com/2014/03/04/gradient-descent-derivation/

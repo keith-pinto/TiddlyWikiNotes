@@ -1,5 +1,5 @@
 created: 20190706020741465
-modified: 20190708013531198
+modified: 20190722233836789
 tags: draft nlp
 title: N-Grams - A langauge model
 type: text/vnd.tiddlywiki
@@ -28,4 +28,9 @@ The ''intuition of the n-gram model'' is that instead of computing the probabili
 
 TODO
 
-1. Markov assumption
+# Markov assumption
+# MLE
+# Example of creating MLEs via corpus of 3 sentences
+# Relative frequency
+# numerical underflow - Using logs to better normalise joint probability
+# Perplexity - Weighted average branching factor of a language model

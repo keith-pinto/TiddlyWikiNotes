@@ -1,0 +1,15 @@
+created: 20190725162906265
+modified: 20190726021537505
+tags: draft machine-learning
+title: Locally weighted regression
+type: text/vnd.tiddlywiki
+
+@@text-align:center;
+Fit $$\theta$$ to minimize $$ \sum_i w^i (y^i - \theta^Tx^i)^2$$
+
+where $$w^i = exp(-\frac{(x^i-x)^2}{2\tau^2})$$
+
+if $$|x^i-x|$$ is small then $$w^i \approx 1$$ 
+
+if $$|x^i-x|$$ is large then $$w^i \approx 0$$ 
+@@

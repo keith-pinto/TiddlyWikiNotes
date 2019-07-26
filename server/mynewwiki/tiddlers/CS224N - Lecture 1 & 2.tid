@@ -1,0 +1,41 @@
+created: 20190519004212644
+modified: 20190720085428943
+tags: nlp [[deep learning]] rough-notes cs224n
+title: CS224N - Lecture 1 & 2
+type: text/vnd.tiddlywiki
+
+!! Lecture 1
+
+# "denotational semantics" often used by linguist to understand meaning of thing.
+# Approx. 2012-13 when words were represented via neural network style of representation.
+# one-hot vector representation of bag of wods
+# Language has an infinite space, look at "derivational morphology"
+# Google had word similarity tables in 2005! (WordNet approach)
+# Distributional semantics
+# J.R. Firth - British Linguist
+# Dense vector for each work - Word Vectors
+# word vectors $$\approx$$ word embeddings $$\approx$$ word representations
+# Word2vec (Mikolov et al. 2013)
+# Look at learning algorithm that creates word vectors out of text
+
+!!! Learning algorithms for creating word vectors
+
+# start with random values of each word in a corpus
+# If exponentiation makes everything positive then how do we differentiate between -10 and 10?
+# Make "dot products" tiddler
+# Revise "softmax" ("hardmax" also exists)
+# How to differentiate a vector?
+
+
+!! Lecture 2?
+
+
+# Checkout CS229 for more on Optimisation techniques
+# Checkout Stephen Boyd's classes on Optimisation
+# Binary logistic regression???
+
+
+
+
+
+

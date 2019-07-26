@@ -1,5 +1,5 @@
 created: 20190708021813658
-modified: 20190708023442657
+modified: 20190714011258158
 tags: draft neural-networks
 title: Learning with gradient descent
 type: text/vnd.tiddlywiki
@@ -15,3 +15,21 @@ TODO: elaborate on
 $$
 \Delta C \approx \nabla C . \Delta v
 $$
+
+TODO: elaborate on update rules
+
+$$
+w_{k} \rightarrow w_{k}^{\prime} = w_{k} - \eta \frac{\partial C}{\partial w_{k}}
+$$
+
+$$
+b_{l} \rightarrow b_{l}^{\prime} = b_{l} - \eta \frac{\partial C}{\partial b_{l}}
+$$
+
+TODO: stochastic gradient descent 
+
+$$
+\frac{\sum_{j=1}^{m} \nabla C_{X_{j}}}{m} \approx \frac{\sum_{x} \nabla C_{x} }{x} = \nabla C
+$$
+
+TODO: epoch of training

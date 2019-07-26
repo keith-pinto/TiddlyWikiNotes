@@ -1,0 +1,19 @@
+created: 20190720085448209
+modified: 20190720165423620
+tags: neural-networks draft
+title: NN & DL - Chapter 2 (rough notes)
+type: text/vnd.tiddlywiki
+
+<<<
+One consequence of (BP4) is that weights output from low-activation neurons learn slowly.
+<<<
+
+<<<
+Recall from the graph of the sigmoid function in the last chapter that the $$\sigma$$ function becomes very flat when $$\sigma(z^L_j)$$ is approximately $$0$$ or $$1$$.
+
+When this occurs we will have $$\sigma(z^L_j) \approx 0$$. And so the lesson is that a weight in the final layer will learn slowly if the output neuron is either low activation ($$\approx 0$$) or high activation ($$\approx 1$$).
+
+In this case it's common to say the output neuron has saturated and, as a result, the weight has stopped learning (or is learning slowly).
+
+Similar remarks hold also for the biases of output neuron.
+<<<

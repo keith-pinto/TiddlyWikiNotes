@@ -1,0 +1,9 @@
+created: 20190720043244824
+modified: 20190720043930569
+tags: draft calculus
+title: Fundamental Theorem of Calculus
+type: text/vnd.tiddlywiki
+
+$$
+\text{if } F^{\prime}(x) = f(x) \text{ then } \LARGE \int_{a}^{b} \normalsize f(x)dx = F(b) - F(a)
+$$
