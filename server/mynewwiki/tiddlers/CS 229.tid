@@ -1,5 +1,5 @@
 created: 20190721014901518
-modified: 20190726021540824
+modified: 20190803000452285
 tags: machine-learning rough-notes
 title: CS 229
 type: text/vnd.tiddlywiki
@@ -39,3 +39,15 @@ type: text/vnd.tiddlywiki
 # In a week or two we'll be learning generative & discriminative algorithms
 # IID - Independently identical distribution
 # Digression perceptron
+# Why do we prefer the log likelihood?
+
+! Lecture 4
+
+# What is the hessian matrix?
+# Minimising or maximising the likelihood for logistic regression via newton's method is the same - Why?
+# Understanding gaussian and Bernoulli distributions
+# Bernoulli distribution - $$p(y=1;\phi) = \phi$$
+# Understand "Exponential family of distributions"
+# What is a "Sufficient statistic"?
+# Creating General Linear Models based on specific distributions
+# Softmax regression - Based on multinomial distribution

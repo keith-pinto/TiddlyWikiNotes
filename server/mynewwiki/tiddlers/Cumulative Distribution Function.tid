@@ -1,0 +1,23 @@
+created: 20190730002043596
+modified: 20190730002214989
+tags: statistics
+title: Cumulative Distribution Function
+type: text/vnd.tiddlywiki
+
+<<<
+The CDF is a function of x, where x is any value that might appear in the distribution. To evaluate CDF(x) for a particular value of x, we compute the fraction of the values in the sample less than (or equal to) x.
+<<<
+
+As an example, suppose a sample has the values {1, 2, 2, 3, 5}. Here are some values from its CDF:
+
+CDF(0) = 0 
+
+CDF(1) = 0.2 
+
+CDF(2) = 0.6 
+
+CDF(3) = 0.8 
+
+CDF(4) = 0.8 
+
+CDF(5) = 1

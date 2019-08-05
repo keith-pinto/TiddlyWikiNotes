@@ -1,0 +1,17 @@
+created: 20190730011249101
+modified: 20190730011644031
+tags: draft calculus
+title: Euler's Formula
+type: text/vnd.tiddlywiki
+
+$$
+\LARGE
+e^{i\theta} = cos(\theta) + isin(\theta)
+$$
+
+<<<
+One special case of this equation has even been called "//the most beautiful equation in all of mathematics//", since it relates the five most important numbers $$0, 1, i = \sqrt{-1} , \pi, \text{ and } e$$ together in one elegant formula:
+<<<
+$$
+e^{i\pi} + 1 = 0
+$$

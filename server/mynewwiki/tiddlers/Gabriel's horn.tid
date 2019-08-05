@@ -1,0 +1,15 @@
+created: 20190730010753550
+modified: 20190730011215112
+tags: calculus interesting-fact integral
+title: Gabriel's horn
+type: text/vnd.tiddlywiki
+
+
+<div style="width:500px;margin:auto">
+[img[Gabriel's Horn - image #1]]
+</div>
+
+<<<
+It has the strange property that you can fill it with a few gallons of paint, but you can never finish painting the outside, no matter how much paint you have! (Mathematically, this means it has infinite surface area but finite volume.)
+<<<
+

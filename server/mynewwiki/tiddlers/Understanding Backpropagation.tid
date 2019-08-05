@@ -1,8 +1,16 @@
 created: 20190716005851444
-modified: 20190716011450484
+modified: 20190729170853601
 tags: draft neural-networks
 title: Understanding Backpropagation
 type: text/vnd.tiddlywiki
+
+<<<
+''Backpropagation'' is really one instance of a more general technique called "''reverse mode differentiation''" to compute derivatives of functions represented in some kind of directed graph form.
+<<<
+
+<<<
+Hebbian Theory - Neurons that fire together, wire together
+<<<
 
 !! Naming conventions for weights
 $$

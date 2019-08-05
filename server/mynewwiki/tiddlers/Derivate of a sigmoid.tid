@@ -1,0 +1,65 @@
+created: 20190731233614139
+modified: 20190805014015656
+tags: draft machine-learning
+title: Derivate of a sigmoid
+type: text/vnd.tiddlywiki
+
+!Sigmoid function
+$$
+\sigma(x) = \frac{1}{1+e^{-x}}
+$$
+
+!Derivate of a Sigmoid function
+
+$$
+\sigma^\prime(x) = \frac{d(\sigma(x))}{dx}
+$$
+
+$$
+\text{let } (1 + e^{-x}) = u \text{  } \therefore \sigma = \frac{1}{u}
+$$
+
+$$
+\text{by chain rule, }
+\frac{d(\sigma(x))}{du}.\frac{du}{dx}
+$$
+
+$$
+\frac{d(\sigma(x))}{du} = - \frac{1}{u^2}
+$$
+
+$$
+\frac{du}{dx} = -e^{-x}
+$$
+
+$$
+\therefore \frac{d(\sigma(x))}{du}.\frac{du}{dx} = - \frac{1}{u^2} . -e^{-x}
+$$
+
+$$
+= \frac{e^{-x}}{(1+e^{-x})^2} 
+$$
+
+$$
+= \frac{e^{-x}}{(1+e^{-x}).(1+e^{-x})} 
+$$
+
+$$
+= \frac{1}{(1+e^{-x})} . \frac{1+e^{-x}-1}{(1+e^{-x})} 
+$$
+
+$$
+= \frac{1}{(1+e^{-x})} . \bigg(\frac{(1+e^{-x})}{(1+e^{-x})} - \frac{1}{(1+e^{-x})}\bigg)
+$$
+
+$$
+= \frac{1}{(1+e^{-x})} . \bigg(1 - \frac{1}{(1+e^{-x})} \bigg)
+$$
+
+$$
+\LARGE
+\therefore \sigma^\prime(x) = \sigma(x) . (1 - \sigma(x))
+$$
+
+!! References
+https://towardsdatascience.com/derivative-of-the-sigmoid-function-536880cf918e
