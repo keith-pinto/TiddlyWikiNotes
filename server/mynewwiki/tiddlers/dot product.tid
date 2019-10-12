@@ -1,13 +1,24 @@
 created: 20190627005656243
-modified: 20190706023751732
+modified: 20190928082736429
 tags: draft [[linear algebra]] matrices
 title: dot product
 type: text/vnd.tiddlywiki
 
 ! What is a dot product?
-<<<
-Coming soon..
-<<<
+
+$$
+\overrightharpoon{a} \cdot \overrightharpoon{b} =
+
+|\overrightharpoon{a}||\overrightharpoon{b}|\cos\theta = 
+
+a_xb_x + a_yb_y
+
+$$
+
+Following are some intuitions of what a "dot product" means
+
+* Multiplication of vectors
+* Value that represents how much are two vectors in alignment, a greater positive number means larger alignment, negative numbers mean they are no aligned or are opposing.
 
 ! References
 https://www.mathsisfun.com/algebra/vectors-dot-product.html

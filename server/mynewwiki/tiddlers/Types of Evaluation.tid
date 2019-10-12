@@ -1,0 +1,8 @@
+created: 20190827165919456
+modified: 20190827172632501
+tags: machine-learning padhai
+title: Types of Evaluation
+type: text/vnd.tiddlywiki
+
+* (Top-K) accuracy
+* Precision, Recall, F1

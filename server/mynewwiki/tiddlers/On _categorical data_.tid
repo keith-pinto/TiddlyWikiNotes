@@ -1,0 +1,15 @@
+created: 20191012060113315
+modified: 20191012060310061
+tags: machine-learning
+title: On "categorical data"
+type: text/vnd.tiddlywiki
+
+> ''category_encoders'' is a very useful library for encoding categorical columns. Not only does it support one-hot, binary and label encoding, but also other advanced encoding methods like //Helmert contrast, polynomial contrast, backward difference//, etc.
+
+
+
+''References''
+
+https://www.datacamp.com/community/tutorials/categorical-data
+
+http://contrib.scikit-learn.org/categorical-encoding/

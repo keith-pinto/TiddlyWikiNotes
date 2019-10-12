@@ -1,0 +1,21 @@
+created: 20190828094333076
+modified: 20190828100147349
+tags: padhai [[linear algebra]]
+title: Vector projections
+type: text/vnd.tiddlywiki
+
+Projection of $${\overrightharpoon{y}}$$ over $${\overrightharpoon{x}}$$:
+
+$$\LARGE
+
+Proj_{\overrightharpoon{y}}{\overrightharpoon{x}} =
+\Bigg( \frac{\overrightharpoon{x}.\overrightharpoon{y}}{||y||^2} \Bigg)
+
+\overrightharpoon{y}
+
+$$
+
+
+<<<
+Project of a vector over another is synonymous to the shadow of a vector falling onto another vector. 
+<<<

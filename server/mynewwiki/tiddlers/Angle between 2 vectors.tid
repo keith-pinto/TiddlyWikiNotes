@@ -1,0 +1,10 @@
+created: 20190828100041661
+modified: 20190828100315602
+tags: padhai [[linear algebra]]
+title: Angle between 2 vectors
+type: text/vnd.tiddlywiki
+
+$$
+\LARGE
+\cos\theta = \frac{\overrightharpoon{x}.\overrightharpoon{y}}{||\overrightharpoon{x}||*||\overrightharpoon{y}||}
+$$

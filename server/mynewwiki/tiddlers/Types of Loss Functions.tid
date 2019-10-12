@@ -1,0 +1,9 @@
+created: 20190824170302634
+modified: 20190827172612378
+tags: machine-learning padhai
+title: Types of Loss Functions
+type: text/vnd.tiddlywiki
+
+* Squared Error
+* Cross Entropy
+* KL Divergence

@@ -1,0 +1,15 @@
+created: 20190824173704462
+modified: 20190827172623861
+tags: machine-learning padhai
+title: Types of Learning Algorithm
+type: text/vnd.tiddlywiki
+
+* Gradient Descent ++
+* Adagrad
+* RMSProp
+* Adam
+
+Algorithms that use one of the above learning algorithms as their backbone
+
+* Backpropogation
+* Backpropogation through time (RNN)
