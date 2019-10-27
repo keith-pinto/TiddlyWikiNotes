@@ -1,0 +1,15 @@
+created: 20191027102711191
+modified: 20191027103900348
+tags: cs144
+title: Internet Protocol - Rough Notes
+type: text/vnd.tiddlywiki
+
+<div style="width:50%;height:50%">
+[img[IPv4 Datagram - Visual]]
+</div>
+
+> TTL defaults to 128
+> Ethernet can only carry data packets that are shorter than 1500 bytes
+> Protocol ID 6 = TCP Data Segment
+> IANA has defined over 140 Protocol IDs representing the respective transmission protocols
+> Total Packet Size has to be within 64 Kb

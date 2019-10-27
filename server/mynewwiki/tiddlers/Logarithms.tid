@@ -1,0 +1,23 @@
+created: 20191026062912734
+modified: 20191026063338144
+tags: padhai
+title: Logarithms
+type: text/vnd.tiddlywiki
+
+! Some $$\log$$ formulas
+
+$$\large
+\log(a.b) = \log(a) + \log(b)
+$$
+
+$$\large
+\log(\frac{1}{a}) = \log(1) - \log(a)
+$$
+
+$$\large
+\log(1) = 0
+$$
+
+$$\large
+\log_a(a^n) = n
+$$

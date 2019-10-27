@@ -1,0 +1,15 @@
+created: 20191026070328173
+modified: 20191026072013544
+tags: padhai
+title: Kullback–Leibler divergence
+type: text/vnd.tiddlywiki
+
+! K-L Divergence
+
+$$
+\text{entropy of estimated distribution} - \text{entropy of actual distribution} 
+$$
+
+$$\large
+KLD(y||\hat{y}) = - \sum_{i=1}^n{y_i . \log(\hat{y_i})} + \sum_{i=1}^n{y_i . \log(y_i)}
+$$

@@ -1,2 +1,2 @@
 #!/bin/bash
-tiddlywiki mynewwiki --listen
+tiddlywiki mynewwiki --listen port=8081
