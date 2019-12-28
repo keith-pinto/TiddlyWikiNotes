@@ -1,0 +1,17 @@
+created: 20191029185545848
+modified: 20191029185921469
+tags: cs144
+title: Why use the "Hexadecimal" system?
+type: text/vnd.tiddlywiki
+
+>Have you ever felt constrained forming numbers with just 10 numerical digits? Or wanted to represent large numbers with fewer digits? Or easily identify byte values without having to look at binary's hypnotic string of 1's and 0's? For applications like these, hexadecimal often becomes the engineer's number-system-of-choice.
+<br/>
+
+>The main reason why we use hexadecimal numbers is because it is much easier to express binary number representations in hex than it is in any other base number system.
+<br/>
+
+>Hex, like decimal, combines a set of digits to create large numbers. It just so happens that hex uses a set of 16 unique digits. Hex uses the standard 0-9, but it also incorporates six digits you wouldn't usually expect to see creating numbers: A, B, C, D, E, and F.
+
+References
+http://digiassn.blogspot.com/2006/02/why-do-we-use-hexadecimal.html
+https://learn.sparkfun.com/tutorials/hexadecimal/all

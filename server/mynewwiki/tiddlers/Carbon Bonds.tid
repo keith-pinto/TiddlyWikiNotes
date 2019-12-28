@@ -1,0 +1,26 @@
+created: 20191228135748555
+modified: 20191228140753769
+tags: biochemistry
+title: Carbon Bonds
+type: text/vnd.tiddlywiki
+
+! Single Bond
+$$\LARGE
+C - C
+$$
+
+<<<
+NOTE: Single bonds can rotate, this property is crucial for a protein
+<<<
+
+<hr/>
+
+! Double and triple bond
+$$\LARGE
+C = C \\
+C \equiv C
+$$
+
+<<<
+Carbon double or triple bonds are called unsaturated bonds. These can't rotate
+<<<

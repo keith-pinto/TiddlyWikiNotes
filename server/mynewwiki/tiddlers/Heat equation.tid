@@ -1,0 +1,9 @@
+created: 20191222145509923
+modified: 20191228125446923
+tags: [[differential equations]]
+title: Heat equation
+type: text/vnd.tiddlywiki
+
+$$\LARGE
+\frac{du}{dt} = \frac{d^2u}{dx^2}
+$$

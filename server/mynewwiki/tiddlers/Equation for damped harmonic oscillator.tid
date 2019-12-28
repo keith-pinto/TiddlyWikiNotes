@@ -1,0 +1,9 @@
+created: 20191222145132097
+modified: 20191222145535974
+tags: [[differential equations]]
+title: Equation for damped harmonic oscillator
+type: text/vnd.tiddlywiki
+
+$$\LARGE
+m \frac{d^2x}{dt^2} +b \frac{dx}{dt} + kx = 0
+$$
