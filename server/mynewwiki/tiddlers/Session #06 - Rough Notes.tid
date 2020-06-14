@@ -1,0 +1,98 @@
+created: 20200427012351827
+modified: 20200427030222908
+tags: 
+title: Session #06 - Rough Notes
+type: text/vnd.tiddlywiki
+
+! Derivate of $$f(x)$$ is $$f'(x)$$
+
+!Difference Quotient Formula
+
+
+$$\LARGE
+f'(x) = \lim_{\Delta{x}\to 0}  \frac{f(x_0 + \Delta{x})-f(x_0)}{\Delta{x}} 
+$$
+
+! Problem 1
+
+$$\LARGE
+\text{What is derivative of } x^3
+$$
+
+$$\LARGE
+= \frac{f((x + \Delta{x})^3) - x^3}{\Delta{x}}
+$$
+
+$$\LARGE
+(a + b)^3 = a^3 + b^3 + 3a^2b + 3ab^2 
+$$
+
+$$\LARGE
+= \frac{(x^3 +\Delta{x^3} + 3x^2\Delta{x} + 3x\Delta{x^2} ) - x^3}{\Delta{x}}
+$$
+
+$$\LARGE
+= \Delta{x^2} + 3x^2 + 3x\Delta{x}
+$$
+
+$$\LARGE
+\text{Applying limits}
+$$
+
+$$\LARGE
+f'(x) = \lim_{\Delta{x}\to 0} \Delta{x^2} + 3x^2 + 3x\Delta{x}
+$$
+
+$$\LARGE
+f'(x) = \lim_{\Delta{x}\to 0} 0^2 + 3x^2 + (3x * 0)
+$$
+
+$$\LARGE
+f'(x) = \lim_{\Delta{x}\to 0} 3x^2
+$$
+
+$$\LARGE
+f'(x) = 3x^2
+$$
+
+$$\LARGE
+\text{General pattern of finding derivatives with powers}
+$$
+
+$$\LARGE
+f'(x^n) = nx^{(n-1)}
+$$
+
+! Problem 2
+
+$$\LARGE
+\text{What is derivative of } \frac{1}{x}
+$$
+<hr/>
+
+$$\LARGE
+\frac{1}{x} = x^{-1}
+$$
+
+$$\LARGE
+\frac{1}{x^n} = x^{-n}
+$$
+
+$$\LARGE
+f'(x^{-n}) = -n.x^{-n-1}
+$$
+
+$$\LARGE
+f'(\frac{1}{x^n}) = - \frac{n}{x^{-(n+1)}}
+$$
+
+<hr/>
+
+$$\LARGE
+\sqrt{x} = x^{\frac{1}{2}}
+$$
+
+
+$$\LARGE
+f'(\sqrt{x}) = \frac{1}{2\sqrt{x}}
+$$

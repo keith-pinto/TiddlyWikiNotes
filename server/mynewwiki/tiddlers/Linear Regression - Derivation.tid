@@ -1,8 +1,74 @@
 created: 20190709171320430
-modified: 20190714010450004
+modified: 20200512030532663
 tags: draft machine-learning calculus
 title: Linear Regression - Derivation
 type: text/vnd.tiddlywiki
+
+$$\LARGE
+Loss(m,b) = \frac{1}{2n}.\sum_{i=1}^n (\hat{y_i} - y_i)^2
+$$
+
+where;
+
+* m - Slope of the line that does the prediction
+* b - y-intercept of the line that does the prediction
+* n - No. of samples in my training dataset
+* $$\hat{y_i}$$ - predicted output for $$i^{th}$$ sample
+* $$y_i$$ - original output for $$i^{th}$$ sample
+* $$x_i$$ - x value for $$i^{th}$$ sample
+
+Lets replace $$\hat{y}$$ with the equation of the predicted line
+
+$$\LARGE
+Loss(m,b) = \frac{1}{2n}.\sum_{i=1}^n ((mx_i+b) - y_i)^2
+$$
+
+We need to take derivates w.r.t m and b; but we only know how to take derivate of 1 variable at a time. While we are taking the derivate of one variable; let's assume the other variable is a constant. - Hint look at partial derivates
+
+Let's differentiate the equation w.r.t m, so that means b is a constant.
+
+$$\LARGE
+\text{Partial Loss}(m) = \frac{1}{2n}.\sum_{i=1}^n ((mx_i+b) - y_i)^2
+$$
+
+
+$$\LARGE
+(mx_i+b)^2 - 2 * y_i * (mx_i+b) + y_i^2
+$$
+
+$$\LARGE
+m^2x_i^2 + 2.mx_i.b +b^2 - 2.y_i.mx_i - 2.y_i.b + y_i^2
+$$
+
+Different each term
+
+$$\LARGE
+2mx_i^2 + 2x_ib - 2x_iy_i
+$$
+
+$$\LARGE
+2x_i (mx_i + b - y_i)
+$$
+
+$$\LARGE
+2x_i (\hat{y_i} - y_i)
+$$
+
+Can also be written as
+
+$$\LARGE
+-2x_i (y_i - \hat{y_i})
+$$
+
+Plugging this into the loss equation we get 
+
+$$\LARGE
+\text{Partial Loss}(m) = \frac{1}{n}.\sum_{i=1}^n x_i (\hat{y_i} - y_i)
+$$
+
+<hr/>
+
+IGNORE THIS SECTION
 
 $$
 Error_{(m,b)} = \frac{1}{N} \sum_{i=1}^{N} (y_{i} - (mx_{i} +b))^{2}

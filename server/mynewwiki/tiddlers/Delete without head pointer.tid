@@ -1,0 +1,21 @@
+created: 20200417150211285
+modified: 20200417161605903
+tags: problems cs
+title: Delete without head pointer
+type: text/vnd.tiddlywiki
+
+Source:
+
+https://practice.geeksforgeeks.org/problems/delete-without-head-pointer/1
+
+
+```python
+def deleteNode(curr_node):
+    while(curr_node and curr_node.next):
+        curr_node.data = curr_node.next.data
+        curr_node = curr_node.next
+    curr_node.data = ''
+    curr_node.next = None
+```
+
+

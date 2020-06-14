@@ -1,0 +1,114 @@
+created: 20200501025205555
+modified: 20200501034343776
+tags: 
+title: Session #06 - Problem & Solutions
+type: text/vnd.tiddlywiki
+
+$$
+f(x) = \frac{3}{2+x^2}
+$$
+
+Then what is $$f'(x)?$$
+
+$$
+=\Bigg(\frac{3}{(2+(x+\Delta{x})^2)} - \frac{3}{(2+x^2)}\Bigg). \Bigg(\frac{1}{\Delta{x}}\Bigg)
+$$
+
+$$
+=\Bigg(
+\frac
+{3.(2+x^2) - 3.(2+x^2+\Delta{x^2}+2x.\Delta{x})}
+{(2+x^2+\Delta{x^2}+2x.\Delta{x}).(2+x^2)}
+\Bigg). 
+\Bigg(\frac{1}{\Delta{x}}\Bigg)
+$$
+
+$$
+=\Bigg(
+\frac
+{3.(2+x^2) - 3.(2+x^2+\Delta{x^2}+2x.\Delta{x})}
+{(2+x^2+\Delta{x^2}+2x.\Delta{x}).(2+x^2)}
+\Bigg). 
+\Bigg(\frac{1}{\Delta{x}}\Bigg)
+$$
+
+TODO: Ashwin to share screenshot of solution, then verify.
+
+<hr/>
+$$
+f(x) = 50 - 8x^2
+$$
+
+Then what is $$f'(x)?$$
+
+$$
+f(50-8x^2) = f(50) - f(8x^2)
+$$
+
+$$
+f'(50) = 0
+$$
+
+$$
+f'(-8x^2) = ? \\
+-8 . f'(x^2)
+$$
+
+we know $$f'(x^n) = n.x^{(n-1)}$$
+
+$$
+-8.2x \\
+-16x
+$$
+
+Why is that?
+
+$$
+f'(3x) = 3 \\
+f'(x) = 1 \\
+f'(14000x) = 14000
+$$
+
+Revisit function nomenclature in math
+
+$$
+y = f(x^2)
+$$
+
+$$
+y = f(x)
+$$
+
+$$
+f'(3) = 0 \\
+f'(0) = 0 \\
+f'(14000) = 0
+$$
+
+<hr/>
+! Find all points on the curve y = f(x) at which the tangent line is horizontal
+
+$$\LARGE
+y = 6 -x^2
+$$
+
+$$
+y' = -2x
+$$
+
+We know derivate of $$6-x^2$$ is $$-2x$$, now we need to find for which x f'(x) or y' is 0, because at that point slope will be 0.
+
+When is -2x = 0 ?
+Answer: x = 0
+
+We know that at x = 0
+
+f(x) = y = 6 -x.0. = 6
+
+therefore horizontal line that is tangent to the equation is at y = 6
+
+$$
+f'(x) = \frac{x^2}{x^3} \\
+
+f'(x) = \frac{u'(x)}{v'(x)} \text{where u(x) = }x^2 \text{ and v(x) = }x^3
+$$

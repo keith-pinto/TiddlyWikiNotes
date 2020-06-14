@@ -1,0 +1,111 @@
+created: 20200523091556209
+modified: 20200523103029954
+tags: 
+title: Derivation of multivariate linear regression
+type: text/vnd.tiddlywiki
+
+! Loss function
+
+$$\Large
+L = \frac{1}{2m} \sum_i^m  \Big((\theta_0x_0^i + \theta_1x_1^i + \theta_2x_2^i) - y^i\Big)^2
+$$
+
+if $$\Large \hat{y}^i = (\theta_0x_0^i + \theta_1x_1^i + \theta_2x_2^i)$$
+
+$$\Large
+L = \frac{1}{2m} \sum_i^m  \Big(\hat{y}^i - y^i\Big)^2
+$$
+
+
+NOTE: Let's exclude the summation and averaging part in the equation, while taking the derivative; hence we need to find the derivate of 
+
+$$\Large
+\Big((\theta_0x_0 + \theta_1x_1 + \theta_2x_2) - y\Big)^2
+$$
+
+Let's expand the equation, (refer the following to understand how the expansion works https://www.math-only-math.com/square-of-a-trinomial.html)
+
+$$
+l = \theta_0^2x_0^2 + \theta_1^2x_1^2 + \theta_2^2x_2^2 + 2\theta_0x_0\theta_1x_1 + 2\theta_1x_1\theta_2x_2 + 2\theta_0x_0\theta_2x_2 - 2(\theta_0x_0 + \theta_1x_1 + \theta_2x_2)y + y^2 
+$$
+
+Since we have 3 variable (i.e. $$\theta_0, \theta_1, \theta_2$$), we need to take 3 partial derivates i.e.: 
+
+$$\Large \frac{\partial l}{{\partial\theta_0}} $$, 
+$$\Large \frac{\partial l}{{\partial\theta_1}} $$, 
+$$\Large \frac{\partial l}{{\partial\theta_2}} $$
+
+<hr/>
+
+Now we'll differentiate w.r.t $$\theta_1$$
+
+$$
+\frac{\partial l}{{\partial\theta_1}}  =
+2\theta_1x_1^2 +2\theta_0x_ox_1 + 2x_1\theta_2x_2-2x_1y
+$$
+
+$$
+=
+2x_1(\theta_0x_0 + \theta_1x_1 + \theta_2x_2 - y)
+$$
+
+The above mentioned equation can also be written as 
+
+$$
+=
+2x_1(\hat{y} - y)
+$$
+
+<hr/>
+
+Now we'll differentiate w.r.t $$\theta_2$$
+
+$$
+\frac{\partial l}{{\partial\theta_2}}  =
+2\theta_2x_2^2 +2\theta_0x_0x_2 + 2x_2\theta_1x_1-2x_2y
+$$
+
+$$
+=
+2x_2(\theta_0x_0 + \theta_1x_1 + \theta_2x_2 - y)
+$$
+
+The above mentioned equation can also be written as 
+
+$$
+=
+2x_2(\hat{y} - y)
+$$
+
+<hr/>
+
+Now we'll differentiate w.r.t $$\theta_0$$
+
+$$
+\frac{\partial l}{{\partial\theta_0}}  =
+2\theta_2x_2^2 +2\theta_0x_0x_2 + 2x_2\theta_1x_1-2x_2y
+$$
+
+$$
+=
+2x_0(\hat{y} - y)
+$$
+
+we know in the case of multivariate linear regression $$x_0$$ is 1.
+
+there we can also write the above mentioned equation as 
+
+$$
+=
+2(\hat{y} - y)
+$$
+
+<hr/>
+
+We can generalise that derivate for the nth variable (i.e. $$\theta_n$$) the equation will be
+
+
+$$
+\frac{\partial l}{{\partial\theta_n}} =
+2x_n(\hat{y} - y)
+$$

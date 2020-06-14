@@ -1,0 +1,26 @@
+created: 20200427030201529
+modified: 20200501032943150
+tags: 
+title: Session #06 - Problems
+type: text/vnd.tiddlywiki
+
+! Find f'(x) for the following
+
+$$\LARGE
+f(x) = 50 - 8x^2 \\
+
+f(x) = 7x(500 - x)\\
+
+f(x) = (3x - 2)^2 - 5x \\
+
+f(x) = 5x-x^3 \\
+
+f(x) = \frac{3}{2+x^2}
+
+$$
+
+! Find all points on the curve y = f(x) at which the tangent line is horizontal
+
+$$\LARGE
+y = 6 -x^2
+$$
